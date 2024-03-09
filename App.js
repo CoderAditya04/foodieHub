@@ -1,10 +1,13 @@
-// Manipulate the HTML DOM using Javscript
+// TODO Manipulate the HTML DOM using Javscript
 // const heading = document.createElement("h1");
 // heading.innerHTML = "Namaste Everyone";
 // const root = document.getElementById("root");
 // root.appendChild(heading);
 
-// Manipulate the HTML DOM using React
+// TODO Manipulate the HTML DOM using React
+
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 // Create nested React Elements
 const heading = React.createElement(

@@ -1,0 +1,29 @@
+{
+  "name": "foodiehub",
+  "version": "1.0.0",
+  "description": "This is a food ordering App",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderAditya04/foodieHub.git"
+  },
+  "author": "Aditya Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderAditya04/foodieHub/issues"
+  },
+  "homepage": "https://github.com/CoderAditya04/foodieHub#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

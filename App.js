@@ -1,43 +1,23 @@
-// TODO Manipulate the HTML DOM using Javscript
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Namaste Everyone";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
-
-// TODO Manipulate the HTML DOM using React
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Create nested React Elements
-const heading = React.createElement(
-  "h1",
-  {
-    id: "title",
-    style: {
-      background: "red",
-    },
-    className: "title",
-  },
-  "heading"
-);
-const heading1 = React.createElement(
-  "h1",
-  {
-    id: "title",
-  },
-  "heading1"
+// TODO: React.createElement => ReactElement(JS object) => HTMLElement(Render)
+// const heading = React.createElement("h1", {}, "Hello World 🚀");
+
+// HTML & JSX & React all are different
+// JSX is HTML-like or XML-like syntax
+// JSX Code is transpiled by Babel before it reaches the JS Engine
+//TODO: JSX => React.createElement => ReactElement(JS object) => HTMLElement(Render)
+
+const Title = () => <h1 className="head">Hi ALL!</h1>;
+
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 className="heading">Namaste World!</h1>
+  </div>
 );
 
-const container = React.createElement(
-  "div",
-  {
-    id: "container",
-  },
-  [heading, heading1]
-);
-
-// create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing react element inside root
-root.render(container);
+
+root.render(<HeadingComponent />);
